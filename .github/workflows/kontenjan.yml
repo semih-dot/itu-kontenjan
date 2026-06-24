@@ -1,0 +1,42 @@
+name: İTÜ Kontenjan Takip
+
+# Botu bulutta calistirir. Bilgisayarini acmana gerek yok.
+on:
+  schedule:
+    # Her 10 dakikada bir. (GitHub cron'u pratikte biraz gecikebilir; bu normal.)
+    - cron: "*/10 * * * *"
+  workflow_dispatch:   # Actions sekmesinden ELLE tetikleme butonu (test icin)
+
+# Bot, "kontenjan_state.json" durumunu repoya geri yazabilsin diye yazma izni:
+permissions:
+  contents: write
+
+# Ayni anda iki tur cakismasin:
+concurrency:
+  group: kontenjan-takip
+  cancel-in-progress: false
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu indir
+        uses: actions/checkout@v4
+
+      - name: Kontenjanlari kontrol et
+        env:
+          ITU_BOT_TOKEN: ${{ secrets.ITU_BOT_TOKEN }}
+          ITU_CHAT_ID: ${{ secrets.ITU_CHAT_ID }}
+        run: python3 itu_kontenjan_bot.py --once
+
+      - name: Durumu kaydet (sadece degistiyse)
+        run: |
+          if [[ -n "$(git status --porcelain kontenjan_state.json)" ]]; then
+            git config user.name "kontenjan-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add kontenjan_state.json
+            git commit -m "kontenjan durumu guncellendi [skip ci]"
+            git push
+          else
+            echo "Durum degismedi, commit yok."
+          fi
