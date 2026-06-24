@@ -4,7 +4,7 @@ name: İTÜ Kontenjan Takip
 on:
   schedule:
     # Her 10 dakikada bir. (GitHub cron'u pratikte biraz gecikebilir; bu normal.)
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:   # Actions sekmesinden ELLE tetikleme butonu (test icin)
 
 # Bot, "kontenjan_state.json" durumunu repoya geri yazabilsin diye yazma izni:
