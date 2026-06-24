@@ -33,5 +33,12 @@
     "kod": "SNT 103E",
     "kontenjan": 20,
     "yazilan": 20
+  },
+  "30343": {
+    "durum": "var",
+    "bos": 13,
+    "kod": "UCK 322E",
+    "kontenjan": 40,
+    "yazilan": 27
   }
 }
