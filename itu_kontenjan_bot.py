@@ -39,8 +39,11 @@ import urllib.parse
 
 # Takip etmek istedigin CRN'ler (tirnak icinde, virgulle ayir)
 TAKIP_CRN = [
-    "30154",
-    "30158",
+    "30333",
+    "30357",
+    "30358",
+    "30432",
+    "30359",
     # "12345",
 ]
 
