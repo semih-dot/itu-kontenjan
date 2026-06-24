@@ -1,0 +1,37 @@
+{
+  "30333": {
+    "durum": "var",
+    "bos": 0,
+    "kod": "UCK 421E",
+    "kontenjan": 50,
+    "yazilan": 50
+  },
+  "30357": {
+    "durum": "var",
+    "bos": 0,
+    "kod": "SNT 103",
+    "kontenjan": 20,
+    "yazilan": 20
+  },
+  "30358": {
+    "durum": "var",
+    "bos": 0,
+    "kod": "SNT 103",
+    "kontenjan": 20,
+    "yazilan": 20
+  },
+  "30432": {
+    "durum": "var",
+    "bos": 0,
+    "kod": "SNT 107",
+    "kontenjan": 20,
+    "yazilan": 20
+  },
+  "30359": {
+    "durum": "var",
+    "bos": 0,
+    "kod": "SNT 103E",
+    "kontenjan": 20,
+    "yazilan": 20
+  }
+}
