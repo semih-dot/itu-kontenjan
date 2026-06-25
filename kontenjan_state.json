@@ -1,10 +1,10 @@
 {
   "30333": {
     "durum": "var",
-    "bos": 0,
+    "bos": 9,
     "kod": "UCK 421E",
-    "kontenjan": 60,
-    "yazilan": 60
+    "kontenjan": 70,
+    "yazilan": 61
   },
   "30357": {
     "durum": "var",
@@ -22,10 +22,10 @@
   },
   "30432": {
     "durum": "var",
-    "bos": 1,
+    "bos": 0,
     "kod": "SNT 107",
     "kontenjan": 26,
-    "yazilan": 25
+    "yazilan": 26
   },
   "30359": {
     "durum": "var",
