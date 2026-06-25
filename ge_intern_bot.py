@@ -41,7 +41,7 @@ ARAMA_TERIMLERI = ["intern", "internship", "co-op", "student"]
 
 # Lokasyon filtresi. BOS birakirsan TUM lokasyonlar gelir.
 # Ornek: ["Turkey", "Istanbul"] ya da ["United States"] gibi.
-LOKASYON_FILTRE = []
+LOKASYON_FILTRE = ["Turkey", "Türkiye"]
 
 # Baslik filtresi. BOS birakirsan tum basliklar gelir.
 # Ornek: ["mechanical", "design", "aerospace"] -> sadece bunlari iceren ilanlar.
