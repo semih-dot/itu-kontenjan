@@ -25,7 +25,7 @@ jobs:
         env:
           ITU_BOT_TOKEN: ${{ secrets.ITU_BOT_TOKEN }}
           ITU_CHAT_ID: ${{ secrets.ITU_CHAT_ID }}
-        run: python3 ge_intern_bot.py --status
+        run: python3 ge_intern_bot.py --test
 
       - name: Durumu kaydet (sadece degistiyse)
         run: |
