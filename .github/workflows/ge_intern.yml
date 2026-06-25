@@ -1,0 +1,40 @@
+name: GE Aerospace Intern Takip
+
+# GE Aerospace'in yeni staj/intern ilanlarini bulutta takip eder.
+# ITU botuyla AYNI Telegram secret'larini (ITU_BOT_TOKEN, ITU_CHAT_ID) kullanir.
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # her 30 dakikada bir (ilanlar sik degismez)
+  workflow_dispatch:          # Actions sekmesinden elle tetikleme
+
+permissions:
+  contents: write             # ge_intern_state.json'u geri yazabilmek icin
+
+concurrency:
+  group: ge-intern-takip
+  cancel-in-progress: false
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu indir
+        uses: actions/checkout@v4
+
+      - name: Yeni ilanlari kontrol et
+        env:
+          ITU_BOT_TOKEN: ${{ secrets.ITU_BOT_TOKEN }}
+          ITU_CHAT_ID: ${{ secrets.ITU_CHAT_ID }}
+        run: python3 ge_intern_bot.py --once
+
+      - name: Durumu kaydet (sadece degistiyse)
+        run: |
+          if [[ -n "$(git status --porcelain ge_intern_state.json)" ]]; then
+            git config user.name "ge-intern-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add ge_intern_state.json
+            git commit -m "GE ilan durumu guncellendi [skip ci]"
+            git push
+          else
+            echo "Durum degismedi, commit yok."
+          fi
