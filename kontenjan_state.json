@@ -1,7 +1,10 @@
 {
   "30333": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 12,
+    "kod": "UCK 421E",
+    "kontenjan": 80,
+    "yazilan": 68
   },
   "30357": {
     "durum": "var",
