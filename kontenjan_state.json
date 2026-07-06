@@ -15,10 +15,10 @@
   },
   "30358": {
     "durum": "var",
-    "bos": 0,
+    "bos": 1,
     "kod": "SNT 103",
     "kontenjan": 24,
-    "yazilan": 24
+    "yazilan": 23
   },
   "30432": {
     "durum": "var",
