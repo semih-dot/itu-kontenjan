@@ -38,14 +38,7 @@ import urllib.parse
 # =====================================================================
 
 # Takip etmek istedigin CRN'ler (tirnak icinde, virgulle ayir)
-TAKIP_CRN = [
-    "30333",
-    "30357",
-    "30358",
-    "30432",
-    "30359",
-    # "12345",
-]
+TAKIP_CRN = ["11705", "11706", "11725", "11727", "11729", "11732", "11733", "11740", "10021", "10167"]
 
 # Telegram bot bilgilerin. Guvenlik icin ortam degiskeninden de okur:
 #   export ITU_BOT_TOKEN="...";  export ITU_CHAT_ID="..."
