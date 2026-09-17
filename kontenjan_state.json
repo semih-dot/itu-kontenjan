@@ -56,10 +56,10 @@
   },
   "11725": {
     "durum": "var",
-    "bos": 29,
+    "bos": 30,
     "kod": "UCK 348E",
     "kontenjan": 40,
-    "yazilan": 11
+    "yazilan": 10
   },
   "11727": {
     "durum": "var",
@@ -77,10 +77,10 @@
   },
   "11732": {
     "durum": "var",
-    "bos": 5,
+    "bos": 2,
     "kod": "UCK 419E",
     "kontenjan": 65,
-    "yazilan": 60
+    "yazilan": 63
   },
   "11733": {
     "durum": "var",
