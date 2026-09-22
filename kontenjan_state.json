@@ -70,16 +70,16 @@
   },
   "11729": {
     "durum": "var",
-    "bos": 0,
+    "bos": 10,
     "kod": "UCK 459E",
-    "kontenjan": 60,
+    "kontenjan": 70,
     "yazilan": 60
   },
   "11732": {
     "durum": "var",
-    "bos": 0,
+    "bos": 5,
     "kod": "UCK 419E",
-    "kontenjan": 65,
+    "kontenjan": 70,
     "yazilan": 65
   },
   "11733": {
