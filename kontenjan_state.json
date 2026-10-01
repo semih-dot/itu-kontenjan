@@ -41,40 +41,67 @@
     "yazilan": 24
   },
   "11705": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 29,
+    "kod": "UCK 303E",
+    "kontenjan": 90,
+    "yazilan": 61
   },
   "11706": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 0,
+    "kod": "UCK 303E",
+    "kontenjan": 80,
+    "yazilan": 80
   },
   "11725": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 31,
+    "kod": "UCK 348E",
+    "kontenjan": 40,
+    "yazilan": 9
   },
   "11727": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 15,
+    "kod": "UZB 350E",
+    "kontenjan": 40,
+    "yazilan": 25
   },
   "11729": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 0,
+    "kod": "UCK 459E",
+    "kontenjan": 70,
+    "yazilan": 70
   },
   "11732": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 5,
+    "kod": "UCK 419E",
+    "kontenjan": 75,
+    "yazilan": 70
   },
   "11733": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 13,
+    "kod": "UCK 423E",
+    "kontenjan": 85,
+    "yazilan": 72
   },
   "11740": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 119,
+    "kod": "UCK 4901",
+    "kontenjan": 200,
+    "yazilan": 81
   },
   "10021": {
-    "durum": "yok",
-    "bos": null
+    "durum": "var",
+    "bos": 0,
+    "kod": "TUR 121",
+    "kontenjan": 75,
+    "yazilan": 75
   },
   "10167": {
     "durum": "var",
