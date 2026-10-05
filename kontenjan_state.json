@@ -98,10 +98,10 @@
   },
   "10021": {
     "durum": "var",
-    "bos": 0,
+    "bos": 1,
     "kod": "TUR 121",
     "kontenjan": 75,
-    "yazilan": 75
+    "yazilan": 74
   },
   "10167": {
     "durum": "var",
