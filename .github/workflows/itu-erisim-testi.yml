@@ -1,0 +1,33 @@
+name: İTÜ mail erişim testi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Portları dene
+        run: |
+          python3 - <<'PY'
+          import socket, ssl
+
+          hedefler = [
+              ("imap.itu.edu.tr", 993, True,  "IMAP over SSL"),
+              ("imap.itu.edu.tr", 143, False, "IMAP düz"),
+              ("mail.itu.edu.tr", 995, True,  "POP3 over SSL"),
+              ("mail.itu.edu.tr", 110, False, "POP3 düz"),
+          ]
+
+          for host, port, tls, etiket in hedefler:
+              try:
+                  s = socket.create_connection((host, port), timeout=15)
+                  if tls:
+                      ctx = ssl.create_default_context()
+                      s = ctx.wrap_socket(s, server_hostname=host)
+                  selam = s.recv(300).decode("utf-8", "replace").strip()
+                  print(f"AÇIK    {etiket:15} {host}:{port}  ->  {selam}")
+                  s.close()
+              except Exception as e:
+                  print(f"KAPALI  {etiket:15} {host}:{port}  ->  {type(e).__name__}: {e}")
+          PY
