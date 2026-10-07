@@ -77,17 +77,17 @@
   },
   "11732": {
     "durum": "var",
-    "bos": 3,
+    "bos": 4,
     "kod": "UCK 419E",
     "kontenjan": 75,
-    "yazilan": 72
+    "yazilan": 71
   },
   "11733": {
     "durum": "var",
-    "bos": 9,
+    "bos": 8,
     "kod": "UCK 423E",
     "kontenjan": 85,
-    "yazilan": 76
+    "yazilan": 77
   },
   "11740": {
     "durum": "var",
@@ -98,10 +98,10 @@
   },
   "10021": {
     "durum": "var",
-    "bos": 1,
+    "bos": 0,
     "kod": "TUR 121",
     "kontenjan": 75,
-    "yazilan": 74
+    "yazilan": 75
   },
   "10167": {
     "durum": "var",
