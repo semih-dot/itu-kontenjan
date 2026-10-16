@@ -49,10 +49,10 @@
   },
   "11706": {
     "durum": "var",
-    "bos": -3,
+    "bos": -4,
     "kod": "UCK 303E",
     "kontenjan": 80,
-    "yazilan": 83
+    "yazilan": 84
   },
   "11725": {
     "durum": "var",
@@ -105,9 +105,9 @@
   },
   "10167": {
     "durum": "var",
-    "bos": -21,
+    "bos": -22,
     "kod": "ATA 121",
     "kontenjan": 75,
-    "yazilan": 96
+    "yazilan": 97
   }
 }
