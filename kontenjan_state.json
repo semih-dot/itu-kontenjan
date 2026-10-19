@@ -42,17 +42,17 @@
   },
   "11705": {
     "durum": "var",
-    "bos": 12,
+    "bos": 11,
     "kod": "UCK 303E",
     "kontenjan": 90,
-    "yazilan": 78
+    "yazilan": 79
   },
   "11706": {
     "durum": "var",
-    "bos": -4,
+    "bos": -5,
     "kod": "UCK 303E",
     "kontenjan": 80,
-    "yazilan": 84
+    "yazilan": 85
   },
   "11725": {
     "durum": "var",
